@@ -5,7 +5,7 @@ import avatar from  '../../assets/images/avatar.jpg'
 <template>
   <section
     id="hero"
-    class="card px-15 flex h-[500px] items-center justify-between"
+    class="card pl-15 pr-8 flex h-[500px] items-center justify-between"
   >
     <div class="max-w-lg">
       <p class="mb-4 text-lg">
@@ -26,11 +26,14 @@ import avatar from  '../../assets/images/avatar.jpg'
       </p>
 
       <div class="flex gap-4">
-        <button
+        <a
+          href="https://github.com/chponya"
+          target="_blank"
+          rel="noopener noreferrer"
           class="rounded-xl bg-violet-500 px-6 py-3 text-white transition hover:bg-violet-600"
         >
           GitHub
-        </button>
+        </a>
 
         <button
           class="rounded-xl border border-slate-300 px-6 py-3 transition hover:bg-slate-100"

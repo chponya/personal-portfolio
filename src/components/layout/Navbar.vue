@@ -27,7 +27,7 @@ import { navigation } from '../../data/navigation'
     </nav>
 
     <a
-      href="https://github.com/"
+      href="https://github.com/chponya"
       target="_blank"
       class="rounded-xl border px-4 py-2 transition hover:bg-slate-100"
     >
