@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #f9f9fa;
+  --text: #2a314c;
+  --primary: #8b7dff;
+  --section-space: 48px;
+  --section-title-space: 1.25rem;
+  --card-space: 60px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: 10px;
+
+
+}
+
+
+.card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-6;
+}
+
+.section {
+  padding: var(--section-space) var(--card-space);
+  
+}
+
+.section-card {
+  padding: var(--section-space) var(--card-space);
+}
+
+
+.section-title {
+  margin-bottom: var(--section-title-space);
+
+  @apply text-4xl font-bold;
+}
