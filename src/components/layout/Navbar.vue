@@ -6,9 +6,12 @@ import { navigation } from '../../data/navigation'
   <header
     class="card sticky top-0 z-50 mb-4 flex items-center justify-between px-6 py-4"
   >
-    <div class="text-xl font-bold">
+    <a
+      href="#top"
+      class="text-xl font-bold transition hover:text-violet-500"
+    >
       ✦
-    </div>
+    </a>
 
     <nav>
       <ul class="flex gap-8">

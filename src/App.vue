@@ -13,7 +13,7 @@ import SkillsSection from './components/skills/SkillsSection.vue'
 <template>
   <Navbar />
 
-  <main class="mx-auto mb-10 flex max-w-7xl flex-col gap-4 px-0 pb-5">
+  <main class="mx-auto mb-2 flex max-w-7xl flex-col gap-4 px-0 pb-5" id="top">
     <HeroSection />
     <AboutSection />
     <ExperienceSection />

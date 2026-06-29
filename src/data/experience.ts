@@ -30,7 +30,7 @@ export const hackathons = [
     description: 'Смена по проектной деятельности в сфере IT и цифровизации',
   },
   {
-    period: 'Июнь 2025',
+    period: 'Июнь 2026',
     title: 'Наставник проекта Battery Simulator',
     description: 'Курировала команду и помогала с разработкой',
   },

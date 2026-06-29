@@ -7,7 +7,9 @@ import { hackathons } from '../../data/hackathons'
 import HackathonCard from './HackathonCard.vue'
 import HackathonModal from './HackathonModal.vue'
 
-const [emblaRef, emblaApi] = emblaCarouselVue()
+const [emblaRef, emblaApi] = emblaCarouselVue({
+  loop: true,
+})
 void emblaRef
 
 const modalOpen = ref(false)
@@ -22,10 +24,10 @@ function next() {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative px-12">
 
     <button
-      class="absolute left-0 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow"
+      class="absolute left-0 top-1/2 z-10 -translate-x-6 -translate-y-1/2 rounded-full bg-white p-3 shadow"
       @click="prev"
     >
       ←
@@ -52,7 +54,7 @@ function next() {
     </div>
 
     <button
-      class="absolute right-0 top-1/2 z-10 translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow"
+      class="absolute right-0 top-1/2 z-10 translate-x-6 -translate-y-1/2 rounded-full bg-white p-3 shadow"
       @click="next"
     >
       →
