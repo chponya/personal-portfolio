@@ -1,4 +1,4 @@
-export const hackathons = [
+export const experience = [
   {
     period: '2023',
     title: 'Интенсив по ML от Яндекса',

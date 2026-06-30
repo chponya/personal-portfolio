@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SkillTag from './SkillTag.vue'
-import { skills } from '../../data/skills'
+import { skills } from '@/data/skills'
 </script>
 
 <template>

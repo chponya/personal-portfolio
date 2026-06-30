@@ -13,7 +13,7 @@ defineProps<Props>()
   <div
     class="w-38 rounded-2xl flex-col align-center border border-slate-200 bg-slate-50 p-6 pb-4"
   >
-    <h3 class="mb-2 text-3xl font-bold text-violet-500">
+    <h3 class="mb-2 text-3xl font-bold text-(--primary)">
       {{ stat.value }}
     </h3>
 

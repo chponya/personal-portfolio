@@ -2,18 +2,25 @@
 import { ref } from 'vue'
 import emblaCarouselVue from 'embla-carousel-vue'
 
-import { hackathons } from '../../data/hackathons'
+import { hackathons } from '@/data/hackathons'
+import type { Hackathon } from '@/data/hackathons'
 
 import HackathonCard from './HackathonCard.vue'
 import HackathonModal from './HackathonModal.vue'
+
 
 const [emblaRef, emblaApi] = emblaCarouselVue({
   loop: true,
 })
 void emblaRef
 
+const selectedHackathon = ref<null | Hackathon>(null)
 const modalOpen = ref(false)
 
+function openModal(hackathon: Hackathon) {
+  selectedHackathon.value = hackathon
+  modalOpen.value = true
+}
 function prev() {
   emblaApi.value?.scrollPrev()
 }
@@ -45,8 +52,10 @@ function next() {
           class="min-w-1/4 flex-none px-3"
         >
           <HackathonCard
-            :hackathon="hackathon"
-            @open="modalOpen = true"
+            :title="hackathon.title"
+            :project="hackathon.project"
+            :image="hackathon.image"
+            @open="openModal(hackathon)"
           />
         </div>
 

@@ -1,9 +1,9 @@
-import batterySimImage from '../assets/images/projects/battery-sim.jpg'
-import cozyCoffeeImage from '../assets/images/projects/cozy-coffee.png'
-import focusNicaImage from '../assets/images/projects/focus-nica.png'
-import innerchildSiteImage from '../assets/images/projects/innerchild-site.png'
-import linkitImage from '../assets/images/projects/linkit.png'
-import neocityImage from '../assets/images/projects/neocity.png'
+import batterySimImage from '@/assets/images/projects/battery-sim.jpg'
+import cozyCoffeeImage from '@/assets/images/projects/cozy-coffee.png'
+import focusNicaImage from '@/assets/images/projects/focus-nica.png'
+import innerchildSiteImage from '@/assets/images/projects/innerchild-site.png'
+import linkitImage from '@/assets/images/projects/linkit.png'
+import neocityImage from '@/assets/images/projects/neocity.png'
 
 export interface Project {
   title: string

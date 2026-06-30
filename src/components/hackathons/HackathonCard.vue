@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import type { Hackathon } from '../../data/hackathons'
+interface Props {
+  title: string
+  project: string
+  image: string
+}
 
-defineProps<{
-  hackathon: Hackathon
-}>()
+const { title, project, image } = defineProps<Props>()
 
 const emit = defineEmits<{
   (e: 'open'): void
@@ -16,22 +18,22 @@ const emit = defineEmits<{
     @click="emit('open')"
   >
     <img
-      :src="hackathon.image"
-      :alt="hackathon.project"
+      :src="image"
+      :alt="project"
       class="h-44 w-full object-cover"
     >
 
     <div class="p-4 text-left">
       <h3 class="font-semibold">
-        {{ hackathon.title }}
+        {{ title }}
       </h3>
 
       <p class="text-slate-600">
-        {{ hackathon.project }}
+        {{ project }}
       </p>
 
       <span
-        class="mt-3 inline-block rounded-full bg-violet-100 px-3 py-1 text-xs text-violet-600"
+        class="mt-3 inline-block rounded-full bg-violet-100 px-3 py-1 text-xs text-(--primary)"
       >
         PDF
       </span>

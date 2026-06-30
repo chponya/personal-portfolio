@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { projects } from '../../data/projects'
+import { projects } from '@/data/projects'
 import ProjectCard from './ProjectCard.vue'
 
 const expanded = ref(false)
@@ -28,7 +28,7 @@ const visibleProjects = computed(() =>
       class="mt-6 flex justify-center"
     >
       <button
-        class="font-medium text-violet-500 transition hover:text-violet-700"
+        class="font-medium text-(--primary) transition hover:text-(--primary-hover)"
         @click="expanded = !expanded"
       >
         {{ expanded ? 'Свернуть' : 'Показать больше' }}

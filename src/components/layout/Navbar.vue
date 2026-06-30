@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { navigation } from '../../data/navigation'
+import { navigation } from '@/data/navigation'
 </script>
 
 <template>

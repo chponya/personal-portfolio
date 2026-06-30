@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { hackathons } from '../../data/experience'
-import HackathonCard from './ExperienceCard.vue'
+import { experience } from '@/data/experience'
+import ExperienceCard from './ExperienceCard.vue'
 </script>
 
 <template>
@@ -9,15 +9,17 @@ import HackathonCard from './ExperienceCard.vue'
     class="card section"
   >
     <h2 class="section-title">
-        Опыт
+      Опыт
     </h2>
 
     <div class="flex gap-1 overflow-x-auto pb-2">
-        <HackathonCard
-          v-for="hackathon in hackathons"
-          :key="hackathon.title"
-          :hackathon="hackathon"
-        />
+      <ExperienceCard
+        v-for="item in experience"
+        :key="item.title"
+        :period="item.period"
+        :title="item.title"
+        :description="item.description"
+      />
     </div>
   </section>
 </template>

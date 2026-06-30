@@ -1,9 +1,9 @@
-import gosUslugi from '../assets/images/hackathons/gosuslugi.png'
-import imagesAI from '../assets/images/hackathons/images_ai.png'
-import noodles from '../assets/images/hackathons/noodles.png'
-import ruins from '../assets/images/hackathons/ruins.png'
-import speedDating from '../assets/images/hackathons/speed-dating.png'
-import visorAI from '../assets/images/hackathons/visorAI.png'
+import gosUslugi from '@/assets/images/hackathons/gosuslugi.png'
+import imagesAI from '@/assets/images/hackathons/images_ai.png'
+import noodles from '@/assets/images/hackathons/noodles.png'
+import ruins from '@/assets/images/hackathons/ruins.png'
+import speedDating from '@/assets/images/hackathons/speed-dating.png'
+import visorAI from '@/assets/images/hackathons/visorAI.png'
 
 export interface Hackathon {
   title: string

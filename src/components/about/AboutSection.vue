@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import StatCard from './StatCard.vue'
-import { stats } from '../../data/about'
+import { stats } from '@/data/about'
 </script>
 
 <template>
